@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .pattern-top {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.container .pattern-bottom {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+.container .content-container {
+  width: 70rem;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.content-container .info {
+  padding: 3rem;
+}
+
+.content-container .info .title {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1.3rem;
+}
+
+.content-container .info .message {
+  color: hsl(303, 10%, 53%);
+  line-height: 1;
+}
+
+.content-container .ratings {
+  padding: 3.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container .ratings .rating {
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 1rem 1.9rem;
+  margin: 0.5rem;
+  border-radius: 0.6rem;
+}
+
+.content-container .ratings .rating .stars {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.content-container .ratings .rating .review {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.content-container .ratings .rating-1 {
+  align-self: flex-start;
+}
+
+.content-container .ratings .rating-2 {
+  align-self: center;
+}
+
+.content-container .ratings .rating-3 {
+  align-self: flex-end;
+}
+
+.content-container .testimonials {
+  grid-column: span 2;
+  display: flex;
+  padding: 1.5rem 2rem;
+  gap: 2rem;
+}
+
+.content-container .testimonials .testimonial {
+  background-color: hsl(300, 43%, 22%);
+  padding: 1.8rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.content-container .testimonials .testimonial .user {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.content-container .testimonials .testimonial .user img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+
+.content-container .testimonials .testimonial .user .user-info .name {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.07rem;
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.content-container .testimonials .testimonial .user .user-info .occupation {
+  color: hsl(333, 80%, 67%);
+}
+
+.content-container .testimonials .testimonial .comment {
+  color: hsl(0, 0%, 100%);
+}
+
+.content-container .testimonials .testimonial-1 {
+  align-self: flex-start;
+}
+
+.content-container .testimonials .testimonial-2 {
+  align-self: center;
+}
+
+.content-container .testimonials .testimonial-3 {
+  align-self: flex-end;
+}
